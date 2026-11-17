@@ -1,0 +1,106 @@
+==============================================================================
+ SM-T113 (Galaxy Tab 3 Lite / Tab E 7.0, goyavewifi) - LineageOS 16
+ Temiz ve Bozuk Dosyalar Paketi - Sürüm: 17.11.2026
+==============================================================================
+
+İNDİRME
+  Dosyalar bu deponun "Releases" bölümündedir:
+  https://github.com/DrBayStock/SM-T113-LineageOS16-Fix/releases
+
+DOSYALAR
+  A-TEMIZ(CLEAN)-lineage-16.0-20260901-UNOFFICIAL-goyavewifi-T113FIX-20261117.zip
+       TEMİZ: Bütün düzeltmeleri hazır eklenmiş tam ROM. Tek başına kurulur.
+  B1-ORIJINAL-BOZUK(ORIGINAL-BROKEN)-lineage-16.0-20260901-UNOFFICIAL-goyavewifi.zip
+       BOZUK: Orijinal LineageOS 16 ROM'u (geliştirici: vigus), hiç değiştirilmemiş.
+       Tek başına bu tablette sorunlu çalışır (kamera, Wi-Fi, kilit ekranında dokunmatik...).
+  B2-DUZELTME(FIX)-T113-LOS16-FixPack-20261117.zip
+       DÜZELTME: B1'in ÜZERİNE kurulan düzeltme paketi. B1'i temiz hâle getirir.
+  BENIOKU.txt    - bu dosya
+  README.txt     - İngilizce açıklama
+
+  A ile "B1 + B2" aynı sonucu verir. Hangisini isterseniz onu kurun.
+
+KURULUM (TWRP)
+  Önce: TWRP > Wipe > Advanced Wipe: System, Data, Cache, Dalvik'i silin.
+
+  SEÇENEK A - Temiz ROM (en kolayı)
+    1. Install: A-TEMIZ(CLEAN)-lineage-16.0-20260901-UNOFFICIAL-goyavewifi-T113FIX-20261117.zip
+    2. İsteğe bağlı: GApps (ARM, Android 9.0, pico/nano önerilir)
+    3. Reboot System.
+
+  SEÇENEK B - Bozuk orijinal + düzeltme
+    1. Install: B1-ORIJINAL-BOZUK(ORIGINAL-BROKEN)-lineage-16.0-20260901-UNOFFICIAL-goyavewifi.zip
+    2. Install: B2-DUZELTME(FIX)-T113-LOS16-FixPack-20261117.zip
+    3. İsteğe bağlı: GApps (ARM, Android 9.0, pico/nano önerilir)
+    4. Reboot System.
+    (B2, zaten kurulu bir B1 sisteminin üzerine silmeden de kurulabilir.)
+
+  - İlk açılış biraz uzun sürer (384 MB takas dosyası oluşturulur, ~25 sn).
+  - TWRP'de "Zip signature verification" KAPALI olmalıdır.
+
+DÜZELTİLEN SORUNLAR
+
+  Kamera
+   - Arka kamera çalışır (ROM'un kendi kerneliyle kamera sensörü hiç algılanmıyordu).
+   - Görüntü doğru yönde gelir, video kaydı çalışır.
+
+  Kamera uygulaması
+   - Kamera donanımı bu paketle ÇALIŞIR. Ancak ROM'daki Kamera uygulaması devre dışı
+     bırakılmış ya da görünmüyor olabilir:
+        Ayarlar > Uygulamalar > Tüm uygulamalar > Kamera > Etkinleştir
+     Yine de açılmazsa ayrıca bir kamera uygulaması indirip kurun
+     (örneğin LineageOS Snap ya da Open Camera).
+
+  Wi-Fi
+   - Temiz kurulumda Wi-Fi hiç açılmıyordu; artık ilk açılışta otomatik ayarlanır.
+   - TV'ye ekran yansıtma (Miracast / Wi-Fi Direct) etkin (Arçelik TV ile görüntü test edildi;
+     yansıtma sırasında sesin TV'ye aktarılması test edilmedi).
+   - Ekran kapalıyken gereksiz ağ yayınları süzülür; tablet daha iyi uyur, pil daha az gider.
+
+  Dokunmatik
+   - Dokunmatik doğru yere basar (ekran yönüne göre döndürülür).
+   - Ekran kapatılıp açılınca kilit ekranında dokunmatiğin donması giderildi
+     (eskiden ancak yeniden başlatınca ya da kamerayı açınca düzeliyordu).
+
+  Ekran
+   - Ekranın donması giderildi.
+   - Ekran kapanırken oluşan grafik çökmesi giderildi.
+   - Kilit ekranı da otomatik döner.
+   - "Ortam ekranı" ilk açılışta kapatılır: bu tablette ekran kapanınca tamamen
+     kapanmıyor, düşük ışıkta açık kalıp pil harcıyordu.
+     (İsteyen Ayarlar > Ekran'dan geri açabilir.)
+
+  Otomatik döndürme
+   - İvmeölçer yönü düzeltildi; tablet çevrilince ekran doğru döner.
+
+  Bluetooth
+   - Bluetooth uygulamasının düzeltilmiş sürümü.
+
+  Pil ve uyku
+   - Ekran kapalıyken tablet daha uzun süre derin uykuda kalır.
+   - ROM'un arka planda sürekli dosyaya log yazan hata ayıklama aracı kapatıldı.
+
+  Hız ve bellek
+   - 384 MB takas (swap) alanı: 1 GB RAM'de uygulamalar daha az kapanır.
+   - Uygulamalar şarjdayken arka planda derlenir; zamanla daha hızlı açılırlar.
+
+  Diğer
+   - adb / USB hata ayıklama düzgün çalışır.
+   - Wi-Fi tablet olduğu için gereksiz telefon (SIM) servisi kapatıldı.
+   - Uygulamalar ortak depolamaya (Dahili depolama) yazabilir.
+   - Tarayıcı ve web görünümlü uygulamalar için gerekli izin düzeltildi.
+   - Kapalıyken şarj ekranı yeniden yazıldı.
+   - TWRP'nin, Samsung'un stok recovery'si ile ezilmesi engellendi.
+
+TEKNİK NOT
+  A ve B2, kamera çalışabilsin diye boot bölümüne aynı geliştiricinin LineageOS 15.1
+  kernelini yazar (Linux 3.10.108). Bu tablette bu kombinasyon test edilmiştir.
+
+BİLİNEN SINIRLAR
+  - Modeminiz bağlı cihazları sık pingliyorsa (bazı "akıllı" modemler 15 sn'de bir),
+    tablet uykudan daha sık uyanır; bu tablet tarafında engellenemez.
+  - Wi-Fi radyosu uykuda her işaret sinyalini dinler (eski sürücü sınırı).
+  - TV'ye yansıtmada ses aktarımı test edilmedi; yalnızca görüntü doğrulandı.
+
+Kullanım riski size aittir. Kurmadan önce yedek almanız önerilir.
+Temel ROM ve kernel: vigus.
