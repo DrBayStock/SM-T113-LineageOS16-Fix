@@ -11,7 +11,7 @@ FILES
   A-TEMIZ(CLEAN)-lineage-16.0-20260901-UNOFFICIAL-goyavewifi-T113FIX-20261117.zip
        CLEAN: Full ROM with all fixes already built in. Install it on its own.
   B1-ORIJINAL-BOZUK(ORIGINAL-BROKEN)-lineage-16.0-20260901-UNOFFICIAL-goyavewifi.zip
-       BROKEN: The original LineageOS 16 ROM (developer: vigus), unmodified.
+       BROKEN: The original LineageOS 16 ROM, unmodified.
        On its own it has problems on this tablet (camera, Wi-Fi, lock-screen touch...).
   B2-DUZELTME(FIX)-T113-LOS16-FixPack-20261117.zip
        FIX: Fix pack flashed ON TOP OF B1. Turns B1 into the clean version.
@@ -96,7 +96,7 @@ FIXED ISSUES
    - TWRP is no longer overwritten by Samsung's stock recovery.
 
 TECHNICAL NOTE
-  So that the camera can work, A and B2 write the same developer's LineageOS 15.1
+  So that the camera can work, A and B2 write the LineageOS 15.1
   kernel (Linux 3.10.108) to the boot partition. This combination has been tested on
   this tablet.
 
@@ -107,4 +107,3 @@ KNOWN LIMITATIONS
   - Audio while casting to a TV has not been tested; only video was verified.
 
 Use at your own risk. Making a backup before installing is recommended.
-Base ROM and kernel: vigus.
