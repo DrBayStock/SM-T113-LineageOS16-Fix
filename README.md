@@ -10,7 +10,7 @@ Samsung Galaxy Tab 3 Lite / Tab E 7.0 — **SM-T113 (goyavewifi)**
 
 ## Türkçe
 
-Bu depo, `lineage-16.0-20260901-UNOFFICIAL-goyavewifi` ROM'u (geliştirici: **vigus**) için düzeltmeler içerir. Orijinal ROM bu tablette kendi başına sorunlu çalışır; buradaki dosyalar o sorunları giderir.
+Bu depo, `lineage-16.0-20260901-UNOFFICIAL-goyavewifi` ROM'u için düzeltmeler içerir. Orijinal ROM bu tablette kendi başına sorunlu çalışır; buradaki dosyalar o sorunları giderir.
 
 ### Dosyalar (Releases bölümünde)
 
@@ -41,13 +41,13 @@ GApps: ARM, Android 9.0, pico/nano önerilir. TWRP'de "Zip signature verificatio
 
 Ayrıntılar: [BENIOKU.txt](BENIOKU.txt)
 
-> Not: Kamera için boot bölümüne aynı geliştiricinin LineageOS 15.1 kerneli yazılır. TV yansıtmada ses aktarımı test edilmedi. Kullanım riski size aittir.
+> Not: Kamera için boot bölümüne LineageOS 15.1 kerneli yazılır. TV yansıtmada ses aktarımı test edilmedi. Kullanım riski size aittir.
 
 ---
 
 ## English
 
-This repository contains fixes for the `lineage-16.0-20260901-UNOFFICIAL-goyavewifi` ROM (developer: **vigus**). The original ROM has problems on this tablet on its own; the files here fix them.
+This repository contains fixes for the `lineage-16.0-20260901-UNOFFICIAL-goyavewifi` ROM. The original ROM has problems on this tablet on its own; the files here fix them.
 
 ### Files (in Releases)
 
@@ -78,4 +78,4 @@ GApps: ARM, Android 9.0, pico/nano recommended. "Zip signature verification" mus
 
 Details: [README.txt](README.txt)
 
-> Note: For the camera, the same developer's LineageOS 15.1 kernel is written to the boot partition. Audio while casting to a TV has not been tested. Use at your own risk.
+> Note: For the camera, the LineageOS 15.1 kernel is written to the boot partition. Audio while casting to a TV has not been tested. Use at your own risk.
