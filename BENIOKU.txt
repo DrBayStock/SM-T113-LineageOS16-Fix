@@ -11,7 +11,7 @@ DOSYALAR
   A-TEMIZ(CLEAN)-lineage-16.0-20260901-UNOFFICIAL-goyavewifi-T113FIX-20261117.zip
        TEMİZ: Bütün düzeltmeleri hazır eklenmiş tam ROM. Tek başına kurulur.
   B1-ORIJINAL-BOZUK(ORIGINAL-BROKEN)-lineage-16.0-20260901-UNOFFICIAL-goyavewifi.zip
-       BOZUK: Orijinal LineageOS 16 ROM'u (geliştirici: vigus), hiç değiştirilmemiş.
+       BOZUK: Orijinal LineageOS 16 ROM'u, hiç değiştirilmemiş.
        Tek başına bu tablette sorunlu çalışır (kamera, Wi-Fi, kilit ekranında dokunmatik...).
   B2-DUZELTME(FIX)-T113-LOS16-FixPack-20261117.zip
        DÜZELTME: B1'in ÜZERİNE kurulan düzeltme paketi. B1'i temiz hâle getirir.
@@ -93,8 +93,8 @@ DÜZELTİLEN SORUNLAR
    - TWRP'nin, Samsung'un stok recovery'si ile ezilmesi engellendi.
 
 TEKNİK NOT
-  A ve B2, kamera çalışabilsin diye boot bölümüne aynı geliştiricinin LineageOS 15.1
-  kernelini yazar (Linux 3.10.108). Bu tablette bu kombinasyon test edilmiştir.
+  A ve B2, kamera çalışabilsin diye boot bölümüne LineageOS 15.1 kernelini
+  yazar (Linux 3.10.108). Bu tablette bu kombinasyon test edilmiştir.
 
 BİLİNEN SINIRLAR
   - Modeminiz bağlı cihazları sık pingliyorsa (bazı "akıllı" modemler 15 sn'de bir),
@@ -103,4 +103,3 @@ BİLİNEN SINIRLAR
   - TV'ye yansıtmada ses aktarımı test edilmedi; yalnızca görüntü doğrulandı.
 
 Kullanım riski size aittir. Kurmadan önce yedek almanız önerilir.
-Temel ROM ve kernel: vigus.
