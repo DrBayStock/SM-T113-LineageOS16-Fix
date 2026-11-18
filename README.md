@@ -34,14 +34,14 @@ GApps: ARM, Android 9.0, pico/nano önerilir. TWRP'de "Zip signature verificatio
 ### Düzeltilenler
 
 - **Kamera:** arka kamera çalışır, doğru yönde, video kaydı çalışır. *Kamera uygulaması devre dışı/görünmüyorsa: Ayarlar > Uygulamalar > Kamera > Etkinleştir, ya da Snap / Open Camera kurun.*
-- **Wi-Fi:** temiz kurulumda açılmama sorunu giderildi; TV'ye ekran yansıtma (Miracast) etkin.
+- **Wi-Fi:** temiz kurulumda açılmama sorunu giderildi; TV'ye ekran yansıtma (Miracast) etkin — görüntü ve ses TV'ye gider.
 - **Dokunmatik:** doğru yere basar; ekran kapanıp açılınca kilit ekranında donması giderildi.
 - **Ekran:** donma ve grafik çökmesi giderildi; kilit ekranı da döner; ortam ekranı (pil harcıyordu) kapatıldı.
 - **Diğer:** otomatik döndürme, Bluetooth, adb/USB, derin uyku/pil, 384 MB takas, ortak depolamaya yazma, kapalı şarj ekranı.
 
 Ayrıntılar: [BENIOKU.txt](BENIOKU.txt)
 
-> Not: Kamera için boot bölümüne LineageOS 15.1 kerneli yazılır. TV yansıtmada ses aktarımı test edilmedi. Kullanım riski size aittir.
+> Not: Kamera için boot bölümüne LineageOS 15.1 kerneli yazılır. TV'ye yansıtmada görüntü ve ses çalışır (Arçelik TV ile test edildi). Kullanım riski size aittir.
 
 ---
 
@@ -71,11 +71,11 @@ GApps: ARM, Android 9.0, pico/nano recommended. "Zip signature verification" mus
 ### Fixed
 
 - **Camera:** rear camera works, correct orientation, video recording works. *If the Camera app is disabled/hidden: Settings > Apps > Camera > Enable, or install Snap / Open Camera.*
-- **Wi-Fi:** fixed Wi-Fi not turning on after a clean install; screen casting to a TV (Miracast) enabled.
+- **Wi-Fi:** fixed Wi-Fi not turning on after a clean install; screen casting to a TV (Miracast) enabled — both video and audio go to the TV.
 - **Touchscreen:** touches land in the right place; fixed freezing on the lock screen after screen off/on.
 - **Display:** fixed freezes and graphics crash; lock screen rotates; ambient display (was draining battery) turned off.
 - **Other:** auto-rotate, Bluetooth, adb/USB, deep sleep/battery, 384 MB swap, shared storage write access, off-mode charging screen.
 
 Details: [README.txt](README.txt)
 
-> Note: For the camera, the LineageOS 15.1 kernel is written to the boot partition. Audio while casting to a TV has not been tested. Use at your own risk.
+> Note: For the camera, the LineageOS 15.1 kernel is written to the boot partition. Screen casting to a TV works with both video and audio (tested with an Arcelik TV). Use at your own risk.
