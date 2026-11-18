@@ -88,7 +88,8 @@ FIXED ISSUES
    - Apps are compiled in the background while charging, so they open faster over time.
 
   Other
-   - adb / USB debugging works properly.
+   - adb / USB debugging works properly; the tablet can be used without problems as a
+     development and test device with Android Studio.
    - Unneeded phone (SIM) service disabled, since this is a Wi-Fi tablet.
    - Apps can write to shared storage (Internal storage).
    - Fixed a permission needed by the browser and web-view based apps.
