@@ -53,8 +53,8 @@ DÜZELTİLEN SORUNLAR
 
   Wi-Fi
    - Temiz kurulumda Wi-Fi hiç açılmıyordu; artık ilk açılışta otomatik ayarlanır.
-   - TV'ye ekran yansıtma (Miracast / Wi-Fi Direct) etkin (Arçelik TV ile görüntü test edildi;
-     yansıtma sırasında sesin TV'ye aktarılması test edilmedi).
+   - TV'ye ekran yansıtma (Miracast / Wi-Fi Direct) etkin: görüntü ve ses TV'ye gider
+     (Arçelik TV ile test edildi).
    - Ekran kapalıyken gereksiz ağ yayınları süzülür; tablet daha iyi uyur, pil daha az gider.
 
   Dokunmatik
@@ -100,6 +100,5 @@ BİLİNEN SINIRLAR
   - Modeminiz bağlı cihazları sık pingliyorsa (bazı "akıllı" modemler 15 sn'de bir),
     tablet uykudan daha sık uyanır; bu tablet tarafında engellenemez.
   - Wi-Fi radyosu uykuda her işaret sinyalini dinler (eski sürücü sınırı).
-  - TV'ye yansıtmada ses aktarımı test edilmedi; yalnızca görüntü doğrulandı.
 
 Kullanım riski size aittir. Kurmadan önce yedek almanız önerilir.
