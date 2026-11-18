@@ -37,7 +37,8 @@ GApps: ARM, Android 9.0, pico/nano önerilir. TWRP'de "Zip signature verificatio
 - **Wi-Fi:** temiz kurulumda açılmama sorunu giderildi; TV'ye ekran yansıtma (Miracast) etkin — görüntü ve ses TV'ye gider.
 - **Dokunmatik:** doğru yere basar; ekran kapanıp açılınca kilit ekranında donması giderildi.
 - **Ekran:** donma ve grafik çökmesi giderildi; kilit ekranı da döner; ortam ekranı (pil harcıyordu) kapatıldı.
-- **Diğer:** otomatik döndürme, Bluetooth, adb/USB, derin uyku/pil, 384 MB takas, ortak depolamaya yazma, kapalı şarj ekranı.
+- **Geliştiriciler için:** adb / USB hata ayıklama düzgün çalışır; tablet **Android Studio** ile uygulama geliştirme ve test cihazı olarak sorunsuz kullanılabilir.
+- **Diğer:** otomatik döndürme, Bluetooth, derin uyku/pil, 384 MB takas, ortak depolamaya yazma, kapalı şarj ekranı.
 
 Ayrıntılar: [BENIOKU.txt](BENIOKU.txt)
 
@@ -74,7 +75,8 @@ GApps: ARM, Android 9.0, pico/nano recommended. "Zip signature verification" mus
 - **Wi-Fi:** fixed Wi-Fi not turning on after a clean install; screen casting to a TV (Miracast) enabled — both video and audio go to the TV.
 - **Touchscreen:** touches land in the right place; fixed freezing on the lock screen after screen off/on.
 - **Display:** fixed freezes and graphics crash; lock screen rotates; ambient display (was draining battery) turned off.
-- **Other:** auto-rotate, Bluetooth, adb/USB, deep sleep/battery, 384 MB swap, shared storage write access, off-mode charging screen.
+- **For developers:** adb / USB debugging works properly; the tablet can be used without problems as a development and test device with **Android Studio**.
+- **Other:** auto-rotate, Bluetooth, deep sleep/battery, 384 MB swap, shared storage write access, off-mode charging screen.
 
 Details: [README.txt](README.txt)
 
