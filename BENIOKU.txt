@@ -85,7 +85,8 @@ DÜZELTİLEN SORUNLAR
    - Uygulamalar şarjdayken arka planda derlenir; zamanla daha hızlı açılırlar.
 
   Diğer
-   - adb / USB hata ayıklama düzgün çalışır.
+   - adb / USB hata ayıklama düzgün çalışır; tablet Android Studio ile uygulama geliştirme
+     ve test cihazı olarak sorunsuz kullanılabilir.
    - Wi-Fi tablet olduğu için gereksiz telefon (SIM) servisi kapatıldı.
    - Uygulamalar ortak depolamaya (Dahili depolama) yazabilir.
    - Tarayıcı ve web görünümlü uygulamalar için gerekli izin düzeltildi.
