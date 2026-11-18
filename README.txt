@@ -55,8 +55,8 @@ FIXED ISSUES
   Wi-Fi
    - On a clean install Wi-Fi would not turn on at all; it is now set up automatically
      on first boot.
-   - Screen casting to a TV (Miracast / Wi-Fi Direct) is enabled (video tested with an
-     Arcelik TV; audio over casting has NOT been tested).
+   - Screen casting to a TV (Miracast / Wi-Fi Direct) is enabled: both video and audio
+     go to the TV (tested with an Arcelik TV).
    - While the screen is off, unneeded network broadcasts are filtered, so the tablet
      sleeps better and uses less battery.
 
@@ -104,6 +104,5 @@ KNOWN LIMITATIONS
   - If your router pings connected devices frequently (some "smart" routers do so
     every 15 s), the tablet wakes up more often; this cannot be blocked on the tablet.
   - The Wi-Fi radio listens to every beacon while asleep (old driver limitation).
-  - Audio while casting to a TV has not been tested; only video was verified.
 
 Use at your own risk. Making a backup before installing is recommended.
